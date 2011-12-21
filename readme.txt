@@ -1,4 +1,4 @@
-=== Simple Galleria for WordPRess ===
+=== Simple Galleria for WordPress ===
 Contributors: benjaminniess
 Donate link: http://beapi.fr/donate
 Tags: Galleria, gallery, native, jquery, javascript, image, photo, slider, slideshow
