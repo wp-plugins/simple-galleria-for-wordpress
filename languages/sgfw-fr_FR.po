@@ -1,0 +1,53 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Simple Galleria for WordPress\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2011-12-20 22:35+0100\n"
+"PO-Revision-Date: 2011-12-20 22:36+0100\n"
+"Last-Translator: Benjamin Niess <benjamin.niess@gmail.com>\n"
+"Language-Team: BeApi <contact@beapi.fr>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-KeywordsList: __;_e;esc_attr_e\n"
+"X-Poedit-Basepath: .\n"
+"X-Poedit-Language: French\n"
+"X-Poedit-Country: FRANCE\n"
+"X-Poedit-SearchPath-0: ..\n"
+
+#: ../inc/class.admin.php:24
+msgid "Simple Galleria for WordPress"
+msgstr "Simple Galleria for WordPress"
+
+#: ../inc/class.admin.php:24
+msgid "Simple Galleria"
+msgstr "Simple Galleria"
+
+#: ../inc/class.admin.php:41
+msgid "Simple Galleria for WordPress: Settings"
+msgstr "Simple Galleria for WordPress : Réglages"
+
+#: ../inc/class.admin.php:47
+msgid "Width"
+msgstr "Largeur"
+
+#: ../inc/class.admin.php:52
+msgid "Height"
+msgstr "Hauteur"
+
+#: ../inc/class.admin.php:57
+msgid "Overlay color"
+msgstr "Couleur d'overlay"
+
+#: ../inc/class.admin.php:62
+msgid "Show the close button at the top of the lightbox"
+msgstr "Afficher le bouton de fermeture au haut de la lightbox"
+
+#: ../inc/class.admin.php:71
+msgid "Save Changes"
+msgstr "Enregistrer les changements"
+
+#: ../inc/class.admin.php:104
+msgid "Settings updated with success !"
+msgstr "Les réglages ont bien été enregistrés !"
+
