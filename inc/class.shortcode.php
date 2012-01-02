@@ -33,7 +33,10 @@ Class SimpleGalleriaForWordpress_Shortcodes {
 		$options['width'] = ( isset ( $sgfw_options['width'] ) && (int) $sgfw_options['width'] > 0 ) ? (int) $sgfw_options['width'] : '640';
 		$options['height'] = ( isset ( $sgfw_options['height'] ) && (int) $sgfw_options['height'] > 0 ) ? (int) $sgfw_options['height'] : '480';
 		$options['show_close_button'] = ( isset ( $sgfw_options['show_close_button'] ) && (int) $sgfw_options['show_close_button'] == 1 ) ? 'true' : 'false';
-		
+		$options['show_counter'] = ( isset ( $sgfw_options['show_counter'] ) && (int) $sgfw_options['show_counter'] == 1 ) ? 'true' : 'false';
+		$options['show_info'] = ( isset ( $sgfw_options['show_info'] ) && (int) $sgfw_options['show_info'] == 1 ) ? 'true' : 'false';
+		$options['box_border'] = ( isset ( $sgfw_options['box_border'] ) ) ? (int) $sgfw_options['box_border'] : '10';
+		$options['autoplay'] = ( isset ( $sgfw_options['autoplay'] ) && (int) $sgfw_options['autoplay'] == 1 && isset ( $sgfw_options['autoplay_time'] ) && (int) $sgfw_options['autoplay_time'] > 0 ) ? (int) $sgfw_options['autoplay_time'] : 'false';
 		
 		static $instance = 0;
 		$instance++;
@@ -175,6 +178,7 @@ Class SimpleGalleriaForWordpress_Shortcodes {
 				'image' => $image_big,
 				'thumb' => $image,
 				'title' => $attachment->post_title,
+				'link' => $attachment->guid,
 				'description' => wptexturize($attachment->post_excerpt),
 				
 			);
@@ -188,7 +192,11 @@ Class SimpleGalleriaForWordpress_Shortcodes {
 		$output .= "jQuery('#" . $selector . "-galleria').galleria({
 			data_source: data,
 			height: " . $options['height'] . ",
-			width: " . $options['width'] . "
+			width: " . $options['width'] . ",
+			clicknext: true,
+			showCounter: " . $options['show_counter'] . ",
+			autoplay: " . $options['autoplay'] . ",
+			showInfo: " . $options['show_info'] . "
 		});";
 		 
 		
@@ -203,12 +211,12 @@ Class SimpleGalleriaForWordpress_Shortcodes {
 				'transitionOut'	: 'elastic',
 				'overlayColor'		: '#" . $options['overlay_color'] . "',
 				'overlayOpacity'	: 0.9,
-				'padding' : 0,
+				'padding' : " . $options['box_border'] . ",
 				'showCloseButton' : " . $options['show_close_button'] . "
 			});
 		});
 		
-		Galleria.ready(function(options) {
+		Galleria.ready(function(e) {
 			jQuery('#" . $selector . "-galleria .galleria-container').css({'background-color': '#" . $options['background_color'] . "'});
 		});
 		

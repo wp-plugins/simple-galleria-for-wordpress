@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Simple Galleria for WordPress\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2011-12-20 22:34+0100\n"
-"PO-Revision-Date: 2011-12-20 22:34+0100\n"
+"POT-Creation-Date: 2012-01-02 15:52+0100\n"
+"PO-Revision-Date: 2012-01-02 15:52+0100\n"
 "Last-Translator: Benjamin Niess <benjamin.niess@gmail.com>\n"
 "Language-Team: BeApi <contact@beapi.fr>\n"
 "MIME-Version: 1.0\n"
@@ -40,14 +40,38 @@ msgid "Overlay color"
 msgstr ""
 
 #: ../inc/class.admin.php:62
+msgid "Background color"
+msgstr ""
+
+#: ../inc/class.admin.php:67
+msgid "Box borders size"
+msgstr ""
+
+#: ../inc/class.admin.php:72
+msgid "Show the images counter"
+msgstr ""
+
+#: ../inc/class.admin.php:77
+msgid "Show info button displaying the image description"
+msgstr ""
+
+#: ../inc/class.admin.php:82
 msgid "Show the close button at the top of the lightbox"
 msgstr ""
 
-#: ../inc/class.admin.php:71
+#: ../inc/class.admin.php:87
+msgid "Autoplay ?"
+msgstr ""
+
+#: ../inc/class.admin.php:92
+msgid "Autoplay time"
+msgstr ""
+
+#: ../inc/class.admin.php:101
 msgid "Save Changes"
 msgstr ""
 
-#: ../inc/class.admin.php:104
+#: ../inc/class.admin.php:134
 msgid "Settings updated with success !"
 msgstr ""
 
