@@ -2,7 +2,7 @@
 Class SimpleGalleriaForWordpress_Shortcodes {
 
 	function __construct() {
-		add_action ( 'init', array( &$this, 'init' ) );
+		add_action ( 'init', array( __CLASS__, 'init' ) );
 	}
 	
 	/**
@@ -12,9 +12,9 @@ Class SimpleGalleriaForWordpress_Shortcodes {
 	 * @return void
 	 * @author Benjamin Niess
 	 */
-	function init() {
+	public static function init() {
 		remove_shortcode('gallery');
-		add_shortcode('gallery', array( &$this, 'gallery_shortcode' ) );
+		add_shortcode('gallery', array( __CLASS__, 'gallery_shortcode' ) );
 	}
 	
 	
@@ -226,4 +226,3 @@ Class SimpleGalleriaForWordpress_Shortcodes {
 		
 	}
 }
-?>

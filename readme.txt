@@ -3,8 +3,8 @@ Contributors: benjaminniess
 Donate link: http://beapi.fr/donate
 Tags: Galleria, gallery, native, jquery, javascript, image, photo, slider, slideshow, galérien
 Requires at least: 3.1
-Tested up to: 3.3
-Stable tag: 1.0.1
+Tested up to: 4.0
+Stable tag: 1.1
 
 == Description ==
 
@@ -39,7 +39,11 @@ You just need to put [gallery] inside your content. More info here http://codex.
 
 == Changelog ==
 
-* 1.0
-	* First release
+* 1.1
+	* Use Fancybox 2.1.5
+	* Use Galleria 1.4.2
+	* Code refactoring
 * 1.0.1
 	* Add options to customize the slideshow
+* 1.0
+	* First release
