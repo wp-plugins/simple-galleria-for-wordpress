@@ -20,9 +20,9 @@ Class SimpleGalleriaForWordpress_Client {
 		wp_enqueue_script( 'galleria', SGFW_URL . '/ressources/galleria/themes/classic/galleria.classic.min.js', 'galeria-lib', '1.4.2' );
 		wp_enqueue_style('galleria-css', SGFW_URL . '/ressources/galleria/themes/classic/galleria.classic.css', false, false, 'screen');
 		
-		// Fancybox
-		wp_enqueue_script( 'fancybox', SGFW_URL . '/ressources/fancybox/jquery.fancybox.js', 'jquery', '2.1' );
-		wp_enqueue_style('fancybox-css', SGFW_URL . '/ressources/fancybox/jquery.fancybox.css', false, '2.1', 'screen');
+		// Colorbox
+		wp_enqueue_script( 'colorbox', SGFW_URL . '/ressources/colorbox/jquery.colorbox-min.js', 'jquery', '1.6.0' );
+		wp_enqueue_style('colorbox-css', SGFW_URL . '/ressources/colorbox/colorbox.css', false, '1.6.0', 'screen');
 		
 	}
 	

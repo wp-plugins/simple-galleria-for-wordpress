@@ -33,9 +33,6 @@ Class SimpleGalleriaForWordpress_Admin {
 	 * @author Benjamin Niess
 	 */
 	public static function page_manage() {
-		// Display message
-		self::display_message();
-		
 		// Current settings
 		$sgfw_options = get_option( SGFW_OPTIONS );
 		
@@ -88,7 +85,10 @@ Class SimpleGalleriaForWordpress_Admin {
 		}
 		
 		if ( isset($message) && !empty($message) ) {
-			echo '<div id="message" class="' . ($status != '') ? $status :'updated' . ' fade">';
+
+			echo '<div id="message" class="';
+			echo ( $status != '' ) ? $status :'updated';
+			echo '" >';
 				echo '<p><strong>' . $message . '</strong></p>';
 			echo '</div>';
 		

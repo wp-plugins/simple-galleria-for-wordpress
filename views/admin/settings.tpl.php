@@ -1,4 +1,5 @@
 <div class="wrap" id="sgfw_options">
+	<?php self::display_message(); ?>
 	<h2><?php _e('Simple Galleria for WordPress: Settings', 'sgfw'); ?></h2>
 	
 	<form method="post" action="#">
@@ -15,18 +16,8 @@
 			</tr>
 			
 			<tr valign="top" class="field">
-				<th class="label" scope="row"><label for="sgfw[overlay_color]"><span class="alignleft"><?php _e('Overlay color', 'sgfw'); ?></span></label></th>
-				<td># <input id="sgfw[overlay_color]" style="width:65px;" type="text" maxlength="6" name="sgfw[overlay_color]" value="<?php echo isset(  $sgfw_options['overlay_color'] ) ? esc_attr( $sgfw_options['overlay_color'] ) : ''; ?>" /></td>
-			</tr>
-			
-			<tr valign="top" class="field">
 				<th class="label" scope="row"><label for="sgfw[background_color]"><span class="alignleft"><?php _e('Background color', 'sgfw'); ?></span></label></th>
 				<td># <input id="sgfw[background_color]" style="width:65px;" type="text" maxlength="6" name="sgfw[background_color]" value="<?php echo isset(  $sgfw_options['background_color'] ) ? esc_attr( $sgfw_options['background_color'] ) : ''; ?>" /></td>
-			</tr>
-			
-			<tr valign="top" class="field">
-				<th class="label" scope="row"><label for="sgfw[box_border]"><span class="alignleft"><?php _e('Box borders size', 'sgfw'); ?></span></label></th>
-				<td><input id="sgfw[box_border]" type="number" min="0" max="100" name="sgfw[box_border]" value="<?php echo isset(  $sgfw_options['box_border'] ) ? (int)$sgfw_options['box_border'] : '10'; ?>" /> px</td>
 			</tr>
 			
 			<tr valign="top" class="field">

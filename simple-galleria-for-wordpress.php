@@ -1,7 +1,7 @@
 <?php
 /*
 Plugin Name: Simple Galleria For WordPress
-Version: 1.1
+Version: 2.0
 Plugin URI: http://beapi.fr
 Description: Simple Galleria for WordPress is a jQuery image gallery based on WordPress native galleries.
 Author: Benjamin Niess

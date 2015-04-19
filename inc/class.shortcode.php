@@ -28,14 +28,12 @@ Class SimpleGalleriaForWordpress_Shortcodes {
 		
 		$sgfw_options = get_option( SGFW_OPTIONS );
 		$options = array();
-		$options['overlay_color'] = ( isset ( $sgfw_options['overlay_color'] ) && !empty( $sgfw_options['overlay_color'] ) ) ? esc_attr( $sgfw_options['overlay_color'] ) : 'CCC';
 		$options['background_color'] = ( isset ( $sgfw_options['background_color'] ) && !empty( $sgfw_options['background_color'] ) ) ? esc_attr( $sgfw_options['background_color'] ) : '000';
 		$options['width'] = ( isset ( $sgfw_options['width'] ) && (int) $sgfw_options['width'] > 0 ) ? (int) $sgfw_options['width'] : '640';
 		$options['height'] = ( isset ( $sgfw_options['height'] ) && (int) $sgfw_options['height'] > 0 ) ? (int) $sgfw_options['height'] : '480';
 		$options['show_close_button'] = ( isset ( $sgfw_options['show_close_button'] ) && (int) $sgfw_options['show_close_button'] == 1 ) ? 'true' : 'false';
 		$options['show_counter'] = ( isset ( $sgfw_options['show_counter'] ) && (int) $sgfw_options['show_counter'] == 1 ) ? 'true' : 'false';
 		$options['show_info'] = ( isset ( $sgfw_options['show_info'] ) && (int) $sgfw_options['show_info'] == 1 ) ? 'true' : 'false';
-		$options['box_border'] = ( isset ( $sgfw_options['box_border'] ) ) ? (int) $sgfw_options['box_border'] : '10';
 		$options['autoplay'] = ( isset ( $sgfw_options['autoplay'] ) && (int) $sgfw_options['autoplay'] == 1 && isset ( $sgfw_options['autoplay_time'] ) && (int) $sgfw_options['autoplay_time'] > 0 ) ? (int) $sgfw_options['autoplay_time'] : 'false';
 		
 		static $instance = 0;
@@ -132,7 +130,7 @@ Class SimpleGalleriaForWordpress_Shortcodes {
 		foreach ( $attachments as $id => $attachment ) {
 			$link = isset($attr['link']) && 'file' == $attr['link'] ? wp_get_attachment_link($id, $size, false, false) : wp_get_attachment_link($id, $size, true, false);
 	
-			$output .= "<{$itemtag} class='gallery-item fancylink' href='#" .$selector . "-galleria'>";
+			$output .= "<{$itemtag} class='gallery-item colorbox' href='#" .$selector . "-galleria'>";
 			$output .= "
 				<{$icontag} class='gallery-icon'>
 					$link
@@ -205,14 +203,10 @@ Class SimpleGalleriaForWordpress_Shortcodes {
 		
 		$output .= "jQuery(document).ready(function() {
 			jQuery('#" . $selector . "-galleria .galleria-container').css('background-color', '#" . $options['background_color'] . "');
-			jQuery('.fancylink').fancybox({
-				'overlayShow'	: true,
-				'transitionIn'	: 'elastic',
-				'transitionOut'	: 'elastic',
-				'overlayColor'		: '#" . $options['overlay_color'] . "',
-				'overlayOpacity'	: 0.9,
-				'padding' : " . $options['box_border'] . ",
-				'showCloseButton' : " . $options['show_close_button'] . "
+			jQuery('.colorbox').colorbox( {
+				'inline' : true,
+				'closeButton' : " . $options['show_close_button'] . "
+
 			});
 		});
 		
