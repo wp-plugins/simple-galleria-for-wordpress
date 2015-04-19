@@ -30,7 +30,7 @@ Simple Galleria for WordPress is a jQuery image gallery based on WordPress nativ
 
 You just need to put [gallery] inside your content. More info here http://codex.wordpress.org/Gallery_Shortcode
 
-= Why the appearance of the box suddenly changed after the update?
+= Why the appearance of the box suddenly changed after the update? =
 
 I had to remove Fancybox from this plugin because the 2.0 version of this library is no longer under the GPL Licence.
 I had to use jQuery Colorbox instead which is similar.
