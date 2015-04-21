@@ -2,76 +2,67 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Simple Galleria for WordPress\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-01-02 15:52+0100\n"
-"PO-Revision-Date: 2012-01-02 15:52+0100\n"
+"POT-Creation-Date: 2015-04-21 19:37+1000\n"
+"PO-Revision-Date: 2015-04-21 19:37+1000\n"
 "Last-Translator: Benjamin Niess <benjamin.niess@gmail.com>\n"
 "Language-Team: BeApi <contact@beapi.fr>\n"
+"Language: fr_FR\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Poedit-KeywordsList: __;_e;esc_attr_e\n"
 "X-Poedit-Basepath: .\n"
-"X-Poedit-Language: French\n"
-"X-Poedit-Country: FRANCE\n"
+"X-Generator: Poedit 1.6.3\n"
 "X-Poedit-SearchPath-0: ..\n"
 
-#: ../inc/class.admin.php:24
+#: ../inc/class.admin.php:27
 msgid "Simple Galleria for WordPress"
 msgstr ""
 
-#: ../inc/class.admin.php:24
+#: ../inc/class.admin.php:27
 msgid "Simple Galleria"
 msgstr ""
 
-#: ../inc/class.admin.php:41
-msgid "Simple Galleria for WordPress: Settings"
-msgstr ""
-
-#: ../inc/class.admin.php:47
-msgid "Width"
-msgstr ""
-
-#: ../inc/class.admin.php:52
-msgid "Height"
-msgstr ""
-
-#: ../inc/class.admin.php:57
-msgid "Overlay color"
-msgstr ""
-
-#: ../inc/class.admin.php:62
-msgid "Background color"
-msgstr ""
-
-#: ../inc/class.admin.php:67
-msgid "Box borders size"
-msgstr ""
-
-#: ../inc/class.admin.php:72
-msgid "Show the images counter"
-msgstr ""
-
-#: ../inc/class.admin.php:77
-msgid "Show info button displaying the image description"
-msgstr ""
-
-#: ../inc/class.admin.php:82
-msgid "Show the close button at the top of the lightbox"
-msgstr ""
-
-#: ../inc/class.admin.php:87
-msgid "Autoplay ?"
-msgstr ""
-
-#: ../inc/class.admin.php:92
-msgid "Autoplay time"
-msgstr ""
-
-#: ../inc/class.admin.php:101
-msgid "Save Changes"
-msgstr ""
-
-#: ../inc/class.admin.php:134
+#: ../inc/class.admin.php:71
 msgid "Settings updated with success !"
 msgstr ""
 
+#: ../views/admin/settings.tpl.php:3
+msgid "Simple Galleria for WordPress: Settings"
+msgstr ""
+
+#: ../views/admin/settings.tpl.php:9
+msgid "Width"
+msgstr ""
+
+#: ../views/admin/settings.tpl.php:14
+msgid "Height"
+msgstr ""
+
+#: ../views/admin/settings.tpl.php:19
+msgid "Background color"
+msgstr ""
+
+#: ../views/admin/settings.tpl.php:24
+msgid "Show the images counter"
+msgstr ""
+
+#: ../views/admin/settings.tpl.php:29
+msgid "Show info button displaying the image description"
+msgstr ""
+
+#: ../views/admin/settings.tpl.php:34
+msgid "Show the close button at the top of the lightbox"
+msgstr ""
+
+#: ../views/admin/settings.tpl.php:39
+msgid "Autoplay ?"
+msgstr ""
+
+#: ../views/admin/settings.tpl.php:44
+msgid "Autoplay time"
+msgstr ""
+
+#: ../views/admin/settings.tpl.php:53
+msgid "Save Changes"
+msgstr ""

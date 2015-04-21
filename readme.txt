@@ -3,8 +3,8 @@ Contributors: benjaminniess
 Donate link: http://beapi.fr/donate
 Tags: Galleria, gallery, native, jquery, javascript, image, photo, slider, slideshow, galérien
 Requires at least: 3.1
-Tested up to: 4.1.1
-Stable tag: 2.0
+Tested up to: 4.2
+Stable tag: 2.0.1
 
 == Description ==
 
@@ -36,6 +36,10 @@ I had to remove Fancybox from this plugin because the 2.0 version of this librar
 I had to use jQuery Colorbox instead which is similar.
 If you need to go back to the previous version, please visit my blog at this page: http://benjamin-niess.fr/where-is-my-simple-galleria-for-wordpress-plugin/
 
+= How can I add a custom po/mo translation file =
+
+Create your translation file from the sgfw-default.po one and replace "default" by your country code (eg. sgfw-us_US.po)
+Paste the po and mo file into your wp-content/languages/plugins/ folder
 
 == Screenshots ==
 1. The overview of the frontend gallery
@@ -46,6 +50,8 @@ If you need to go back to the previous version, please visit my blog at this pag
 
 == Changelog ==
 
+* 2.0.1
+    * Added the ability to load a mo (translation) file from wp-content/languages/plugins/ folder
 * 2.0
 	* Warning: This new version is using jQuery Colorbox instead of FancyBox. DO NOT UPDATE ON A LIVE SITE WITHOUT HAVING TESTED IT BEFORE.
 	I had to use this new library because Fancybox 2.0 is not under the GPL licence.
